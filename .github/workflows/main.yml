@@ -7,3 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: metajack/assign-review-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
